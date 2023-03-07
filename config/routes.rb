@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+  patch 'links/:id' => 'links#update', as: :links
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
