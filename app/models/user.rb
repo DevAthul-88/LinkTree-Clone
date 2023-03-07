@@ -8,9 +8,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-         friendly_id :username, use: %i[slugged]
+  friendly_id :username, use: %i[slugged]
 
-  has_one_attached :avatar      
   
   
   def should_generate_new_friendly_id?

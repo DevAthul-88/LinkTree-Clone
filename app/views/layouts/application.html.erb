@@ -11,7 +11,7 @@
   </head>
 
   <body>
-  <% if current_user %>
+  <% if  @should_render_navbar %>
 <%= render partial: "layouts/navbar" %>
   <%end%>
   <%= render partial: "layouts/alerts" %>
