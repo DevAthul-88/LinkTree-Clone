@@ -15,7 +15,7 @@
                 autofocus: true,
                 input_html: { autocomplete: "email" }%>
                  <%= f.input :username
-                input_html: { autocomplete: "username" }%>
+                input_html: { autocomplete: "username",  hint:"Do not use spaces" } %>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
