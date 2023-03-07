@@ -9,9 +9,6 @@
         <li class="nav-item">
         <%= link_to "Home" , "/" , class:"nav-link  text-light" %>
         </li>
-        <li class="nav-item">
-          <%= link_to "Explore" , "/explore" , class:"nav-link  text-light" %>
-        </li>
           <li class="nav-item">
           <%= link_to "Aperence" , apperence_path , class:"nav-link  text-light" %>
         </li>
@@ -20,7 +17,7 @@
             <%= current_user.email %>
           </a>
           <ul class="dropdown-menu">
-            <li>     <%= link_to "My Account" , "/users/edit" , class:"dropdown-item" %></li>
+            <li>       <%= link_to "My Account" , '/users/edit' , class:"dropdown-item" %></li>
             <li><hr class="dropdown-divider"></li>
             <li><%= button_to "Logout", destroy_user_session_path, class:"dropdown-item", method: :delete %></li>
           </ul>
